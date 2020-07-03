@@ -1,0 +1,89 @@
+{
+  "pages": [
+    "pages/home/main",
+    "pages/shoppingCart/main",
+    "pages/submitOrder/main",
+    "pages/me/main",
+    "pages/expiredRedPacket/main",
+    "pages/expiredCoupon/main",
+    "pages/redPacket/main",
+    "pages/couponList/main",
+    "pages/categoryList/main",
+    "pages/selectAddress/main",
+    "pages/searchList/main",
+    "pages/addAddress/main",
+    "pages/orderList/main",
+    "pages/remark/main",
+    "pages/citySearch/main",
+    "pages/citys/main",
+    "pages/index/main",
+    "pages/addressList/main",
+    "pages/protocol/main",
+    "pages/feedback/main",
+    "pages/pickProtocol/main",
+    "pages/orderDetail/main",
+    "pages/meMessage/main",
+    "pages/editUsername/main",
+    "pages/editPassword/main",
+    "pages/editPhone/main",
+    "pages/notice/main",
+    "pages/map/main",
+    "pages/selectCity/main",
+    "pages/selectCitySearch/main",
+    "pages/searchPage/main"
+    
+    
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFCF07",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+    
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [{
+        "pagePath": "pages/home/main",
+        "text": "首页",
+        "iconPath": "static/img/bar1.png",
+        "selectedIconPath": "static/img/bar1.png"
+      },
+      {
+        "pagePath": "pages/orderList/main",
+        "text": "订单",
+        "iconPath": "static/img/bar2.png",
+        "selectedIconPath": "static/img/bar2.png"
+      },
+      {
+        "pagePath": "pages/me/main",
+        "text": "我的",
+        "iconPath": "static/img/bar3.png",
+        "selectedIconPath":  "static/img/bar3.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "static/wxcomponents/vant/button/index",
+    "van-icon":"static/wxcomponents/vant/icon/index",
+    "van-field": "static/wxcomponents/vant/field/index",
+    "van-action-sheet": "static/wxcomponents/vant/action-sheet/index",
+    "van-dialog": "static/wxcomponents/vant/dialog/index",
+    "van-index-bar":"static/wxcomponents/vant/index-bar/index",
+    "van-index-anchor":"static/wxcomponents/vant/index-anchor/index",
+    "van-cell":"static/wxcomponents/vant/cell/index",
+    "van-search": "static/wxcomponents/vant/search/index",
+    "van-toast": "static/wxcomponents/vant/search/index",
+    "van-skeleton": "static/wxcomponents/vant/skeleton/index",
+    "van-dropdown-menu": "static/wxcomponents/vant/dropdown-menu/index",
+    "van-dropdown-item": "static/wxcomponents/vant/dropdown-item/index"
+  }
+}

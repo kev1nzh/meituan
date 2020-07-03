@@ -1,0 +1,5 @@
+<template name="0056aba0">
+  <view class="_div data-v-13f45071 container">
+    <web-view src="{{src}}" wx:if="{{isReady}}" class="_web-view data-v-13f45071"></web-view>
+  </view>
+</template>

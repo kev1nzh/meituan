@@ -1,0 +1,20 @@
+<template name="3d5a5c99">
+  <view class="_div data-v-5eb1daa8 container">
+    <view class="_div data-v-5eb1daa8 top" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <van-search value="{{value}}" placeholder="请输入搜索关键词" disabled class="_van-search data-v-5eb1daa8"></van-search>
+    </view>
+    <view class="_div data-v-5eb1daa8 local">
+      <image src="/static/img/location.png" class="_img data-v-5eb1daa8 location" alt></image> <label class="_span data-v-5eb1daa8">当前定位城市 杭州</label>
+    </view>
+    <view class="_div data-v-5eb1daa8 city-title">热门城市</view>
+    <view class="_div data-v-5eb1daa8 city">
+      <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}" wx:for="{{cityList}}" wx:for-index="index" wx:for-item="item" class="_div data-v-5eb1daa8">
+        {{ item }}
+      </view>
+    </view>
+    <van-index-bar class="_van-index-bar data-v-5eb1daa8">
+      <van-index-anchor index="A" class="_van-index-anchor data-v-5eb1daa8"></van-index-anchor>
+      <van-cell title="文本" class="_van-cell data-v-5eb1daa8"></van-cell>
+    </van-index-bar>
+  </view>
+</template>

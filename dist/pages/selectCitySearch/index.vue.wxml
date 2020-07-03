@@ -1,0 +1,12 @@
+<template name="46d97de1">
+  <view class="_div data-v-3597f4b0 container">
+    <view class="_div data-v-3597f4b0 top">
+      <van-search value="{{value}}" placeholder="请输入搜索关键词" bindsearch="handleProxy" bindfocus="handleProxy" focus="{{focus}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-search data-v-3597f4b0"></van-search>
+      <view class="_div data-v-3597f4b0 result">
+        <view class="_div data-v-3597f4b0 result-item" wx:key="item.id" key="{{item.id}}" wx:for="{{resultList}}" wx:for-index="index" wx:for-item="item">
+          {{ item.value }}
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

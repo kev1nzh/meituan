@@ -1,0 +1,25 @@
+@import "../../common/vendor.wxss";
+
+@charset "UTF-8";
+.container.data-v-3597f4b0 {
+  height: 100vh;
+  background: #fff;
+}
+.result.data-v-3597f4b0 {
+  position: fixed;
+  top: 108rpx;
+  width: 100%;
+  height: calc(100% - 108rpx);
+  background: white;
+  z-index: 1000;
+}
+.result .result-item.data-v-3597f4b0 {
+  border-bottom: 2rpx solid #f1f2f3;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 20rpx;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

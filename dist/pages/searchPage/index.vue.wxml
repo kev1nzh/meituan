@@ -1,0 +1,91 @@
+<template name="a896c72e">
+  <view class="_div data-v-65e7cb10 container">
+    <van-search value="{{searchValue}}" shape="{{'round'}}" input-class="input-class" background="#F4F5F6" placeholder="请输入搜索关键词" class="_van-search data-v-65e7cb10"></van-search>
+    <view class="_div data-v-65e7cb10 filter-box">
+      <view class="_div data-v-65e7cb10 left">
+        <view class="_div data-v-65e7cb10"><label class="_span data-v-65e7cb10 custom-filter">
+            <van-dropdown-menu class="_van-dropdown-menu data-v-65e7cb10">
+              <van-dropdown-item id="filter-1" title="{{filter1Title}}" title-class="{{filter1Id == 'all' ? '' : 'custom-filter-1-item-actived'}}" class="_van-dropdown-item data-v-65e7cb10">
+                <view class="_div data-v-65e7cb10 custom-filter-content">
+                  <view class="_div data-v-65e7cb10 custom-filter-1-item {{[filter1Id === item.value ? 'custom-filter-1-item-actived' : '']}}" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0-'+index}}" data-comkey="{{$k}}" wx:for="{{filter1List}}" wx:for-index="index" wx:for-item="item">
+                    {{ item.text }}
+                  </view>
+                </view>
+              </van-dropdown-item>
+            </van-dropdown-menu>
+          </label></view>
+        <view style="margin-left: 60rpx; padding-bottom: 20rpx; {{('color:' + (filter2Id ? '#ffbc02' : '#999999') + ';')}}" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_div data-v-65e7cb10"><label class="_span data-v-65e7cb10">销量</label></view>
+        <view style="margin-left: 60rpx;padding-bottom: 20rpx; {{('color:' + (filter3Id ? '#ffbc02' : '#999999') + ';')}}" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_div data-v-65e7cb10"><label class="_span data-v-65e7cb10">距离</label></view>
+      </view>
+      <view class="_div data-v-65e7cb10 right"><label class="_span data-v-65e7cb10 custom-filter">
+          <van-dropdown-menu class="_van-dropdown-menu data-v-65e7cb10">
+            <van-dropdown-item id="item" title="{{'全部筛选'}}" title-class="{{titleClass}}" class="_van-dropdown-item data-v-65e7cb10">
+              <view class="_div data-v-65e7cb10 custom-filter-content"></view>
+            </van-dropdown-item>
+          </van-dropdown-menu>
+        </label></view>
+    </view>
+    <view class="_div data-v-65e7cb10">
+      <view wx:key="index" key="{{index}}" class="_div data-v-65e7cb10 shop" wx:for="{{list}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-65e7cb10 left">
+          <image src="{{item.logo}}" alt class="_img data-v-65e7cb10"></image>
+        </view>
+        <view class="_div data-v-65e7cb10 right">
+          <view class="_div data-v-65e7cb10 title">{{ item.title }}</view>
+          <view class="_div data-v-65e7cb10 title-2">
+            <view class="_div data-v-65e7cb10 star">
+              <image src="/static/img/star.png" alt class="_img data-v-65e7cb10"></image> <label class="_span data-v-65e7cb10">{{ item.avg_score }}</label>
+            </view>
+            <view class="_div data-v-65e7cb10 orders">月售 {{ item.orders }}</view>
+          </view>
+          <view class="_div data-v-65e7cb10 title-3"><label class="_span data-v-65e7cb10 title-3-left"><label class="_span data-v-65e7cb10">起送￥{{ item.min_amount }}</label> <label style="margin-left: 20rpx;" class="_span data-v-65e7cb10">配送￥{{ item.freight }}</label></label> <label class="_span data-v-65e7cb10 title-3-right"><label class="_span data-v-65e7cb10">{{ item.pei_time }}分钟</label> <label style="margin-left: 20rpx;" class="_span data-v-65e7cb10">{{ item.juli }}m</label></label></view>
+          <view class="_div data-v-65e7cb10 title-4"><label class="_span data-v-65e7cb10">“很好喝，而且不腻人”</label> <label class="_span data-v-65e7cb10">好喝</label></view>
+          <view class="_div data-v-65e7cb10 title-5" hidden="{{!(item.products.length)}}">
+            <view class="_div data-v-65e7cb10 title-5-product" wx:key="index2" key="{{index2}}" wx:for="{{item.products}}" wx:for-index="index2" wx:for-item="product">
+              <view class="_div data-v-65e7cb10 title-5-product-img">
+                <image src="{{product.photo}}" alt class="_img data-v-65e7cb10"></image>
+              </view>
+              <view class="_div data-v-65e7cb10 title-5-product-title">{{ product.title }}</view>
+              <view class="_div data-v-65e7cb10 title-5-product-price">￥{{ product.price }}</view>
+            </view>
+            <view class="_div data-v-65e7cb10 title-5-product" wx:key="index2" key="{{index2}}" wx:for="{{item.products}}" wx:for-index="index2" wx:for-item="product">
+              <view class="_div data-v-65e7cb10 title-5-product-img">
+                <image src="{{product.photo}}" alt class="_img data-v-65e7cb10"></image>
+              </view>
+              <view class="_div data-v-65e7cb10 title-5-product-title">{{ product.title }}</view>
+              <view class="_div data-v-65e7cb10 title-5-product-price">￥{{ product.price }}</view>
+            </view>
+            <view class="_div data-v-65e7cb10 title-5-product" wx:key="index2" key="{{index2}}" wx:for="{{item.products}}" wx:for-index="index2" wx:for-item="product">
+              <view class="_div data-v-65e7cb10 title-5-product-img">
+                <image src="{{product.photo}}" alt class="_img data-v-65e7cb10"></image>
+              </view>
+              <view class="_div data-v-65e7cb10 title-5-product-title">{{ product.title }}</view>
+              <view class="_div data-v-65e7cb10 title-5-product-price">￥{{ product.price }}</view>
+            </view>
+            <view class="_div data-v-65e7cb10 title-5-product" wx:key="index2" key="{{index2}}" wx:for="{{item.products}}" wx:for-index="index2" wx:for-item="product">
+              <view class="_div data-v-65e7cb10 title-5-product-img">
+                <image src="{{product.photo}}" alt class="_img data-v-65e7cb10"></image>
+              </view>
+              <view class="_div data-v-65e7cb10 title-5-product-title">{{ product.title }}</view>
+              <view class="_div data-v-65e7cb10 title-5-product-price">￥{{ product.price }}</view>
+            </view>
+            <view class="_div data-v-65e7cb10 title-5-product" wx:key="index2" key="{{index2}}" wx:for="{{item.products}}" wx:for-index="index2" wx:for-item="product">
+              <view class="_div data-v-65e7cb10 title-5-product-img">
+                <image src="{{product.photo}}" alt class="_img data-v-65e7cb10"></image>
+              </view>
+              <view class="_div data-v-65e7cb10 title-5-product-title">{{ product.title }}</view>
+              <view class="_div data-v-65e7cb10 title-5-product-price">￥{{ product.price }}</view>
+            </view>
+            <view class="_div data-v-65e7cb10 title-5-product" wx:key="index2" key="{{index2}}" wx:for="{{item.products}}" wx:for-index="index2" wx:for-item="product">
+              <view class="_div data-v-65e7cb10 title-5-product-img">
+                <image src="{{product.photo}}" alt class="_img data-v-65e7cb10"></image>
+              </view>
+              <view class="_div data-v-65e7cb10 title-5-product-title">{{ product.title }}</view>
+              <view class="_div data-v-65e7cb10 title-5-product-price">￥{{ product.price }}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,7 @@
+@import "../../common/vendor.wxss";
+
+@charset "UTF-8";
+.container.data-v-13f45071 {
+  height: 100vh;
+  background: #fff;
+}
